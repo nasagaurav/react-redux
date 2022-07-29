@@ -20,6 +20,8 @@ function reducer(state = { a: [], b: [], c: [], counter: 0 }, action) {
       return { ...state, a: [...state.a, action.payload] };
     case 'add-topic':
       return { ...state, b: [...state.b, action.payload] };
+    case 'add-todo':
+      return { ...state, c: [...state.c, action.payload] };
     default:
       return state;
   }
