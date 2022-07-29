@@ -9,12 +9,12 @@ import AddTodos from './AddTodos';
 export default function App() {
   return (
     <div>
-      <ViewNumbers />
-      <ViewTopics />
-      <ViewTodos />
       <AddNumbers />
       <AddTopics />
       <AddTodos />
+      <ViewNumbers />
+      <ViewTopics />
+      <ViewTodos />
     </div>
   );
 }
