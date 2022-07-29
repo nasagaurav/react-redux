@@ -18,6 +18,8 @@ function reducer(state = { a: [], b: [], c: [], counter: 0 }, action) {
       return { ...state, counter: 0 };
     case 'add-number':
       return { ...state, a: [...state.a, action.payload] };
+    case 'add-topic':
+      return { ...state, b: [...state.b, action.payload] };
     default:
       return state;
   }
