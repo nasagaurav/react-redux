@@ -11,9 +11,11 @@ import ViewCounter from './ViewCounter';
 export default function App() {
   return (
     <div>
+      <AddCounter />
       <AddNumbers />
       <AddTopics />
       <AddTodos />
+      <ViewCounter />
       <ViewNumbers />
       <ViewTopics />
       <ViewTodos />

@@ -1,7 +1,16 @@
-import React from 'react'
-const ViewTodos=()=>{
-	return <div>
-		<h3>ViewTodos</h3>
-	</div>
-}
-export default ViewTodos
+import React from 'react';
+import { useSelector } from 'react-redux';
+const ViewTodos = () => {
+  const state = useSelector((s) => s);
+  return (
+    <div>
+      <h3>ViewTodos {state.c.length}</h3>
+      <ul>
+        {state.c.map((x) => (
+          <li>{x}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+export default ViewTodos;
